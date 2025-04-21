@@ -1,0 +1,39 @@
+package TNSIFDay5;
+
+public class person { // Renamed class to 'Person'
+
+    private String name;
+    private String city;
+
+    public person() { // Constructor name now matches class name
+        System.out.println("Person class default constructor");
+        name = "Amit";
+        city = "Pune";
+    }
+
+    public person(String name, String city) {
+        this.name = name;
+        this.city = city;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    @Override
+    public String toString() {
+        return "Person [name=" + name + ", city=" + city + "]";
+    }
+}
